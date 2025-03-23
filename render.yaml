@@ -2,8 +2,8 @@ services:
   - type: web
     name: n8n-automation-flows
     env: docker
-    repo: https://github.com/n8n-io/n8n
     plan: free
+    repo: https://github.com/unicornfss/n8n-render
     dockerfilePath: Dockerfile.render
     autoDeploy: false
     envVars:
