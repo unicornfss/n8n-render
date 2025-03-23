@@ -2,7 +2,6 @@ services:
   - type: web
     name: n8n-automation-flows
     env: docker
-    image: n8nio/n8n
     plan: free
     autoDeploy: true
     envVars:
