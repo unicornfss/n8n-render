@@ -1,23 +1,24 @@
 services:
   - type: web
     name: n8n-automation-flows
-    env: docker
+    env: image
+    image: n8nio/n8n
     plan: free
     autoDeploy: true
     envVars:
       - key: N8N_BASIC_AUTH_USER
-        value: admin
+        value: "admin"
       - key: N8N_BASIC_AUTH_PASSWORD
         value: ">=7Y@kwEd]ME0YhV"
       - key: N8N_HOST
-        value: n8n-automation-flows.onrender.com
+        value: "n8n-automation-flows.onrender.com"
       - key: WEBHOOK_TUNNEL_URL
-        value: https://n8n-automation-flows.onrender.com
+        value: "https://n8n-automation-flows.onrender.com"
       - key: N8N_ENCRYPTION_KEY
-        value: F8Js28U3MvRlZ1Uv9x6tycbOJ4H7g9ml+SaM5QvRrME=
+        value: "F8Js28U3MvRlZ1Uv9x6tycbOJ4H7g9ml+SaM5QvRrME="
       - key: N8N_RUNNERS_ENABLED
-        value: true
+        value: "true"
       - key: N8N_PORT
-        value: 5678
+        value: "5678"
       - key: PORT
-        value: 5678
+        value: "5678"
